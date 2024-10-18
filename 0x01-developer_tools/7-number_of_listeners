@@ -1,3 +1,4 @@
-contact_me.js == 1
-freelancer.min.js == 2
-jqBootstrapValidation.min.js == 3
+contact_me.js: 1 click reference
+freelancer.min.js: 2 click references
+jqBootstrapValidation.min.js: 3 click references
+Total: 6 click references
