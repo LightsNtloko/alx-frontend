@@ -1,20 +1,22 @@
 /* Variables for storing certain font types */
 
 :root {
-    --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 body {
     font-family: var(--font-family-base);
 }
 
-/* Targeting all 6 levels of section headings */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
 }
 
-/* Links declaration (assumed to be present in styles/3-style.css) */
+/* Links declaration */
 a {
-    color: inherit; /* or specify the color as needed */
+    color: inherit; /* Inherit color from parent element */
+    text-decoration: none; /* Remove underline */
 }
+
+
