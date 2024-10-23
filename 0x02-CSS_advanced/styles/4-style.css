@@ -3,17 +3,17 @@
     --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* Set body font-family */
+/* Set body's font-family to the base font-family */
 body {
     font-family: var(--font-family-base);
 }
 
-/* Target all 6 levels of section headings (h1 to h6) */
+/* Set font-family for all 6 levels of section headings */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
 }
 
-/* Revisit the links declaration (make sure to keep it in the correct order) */
+/* Links declaration (ensure this is positioned after section headings) */
 a {
-    color: var(--text-color);
+    color: var(--text-color); /* Make sure text color variable is defined elsewhere */
 }
