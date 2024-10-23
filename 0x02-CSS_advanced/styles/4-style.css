@@ -1,19 +1,17 @@
+/* Variables for storing certain font types */
+
 :root {
-    --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* Set body's font-family to the base font-family */
 body {
     font-family: var(--font-family-base);
 }
 
-/* Set font-family for all 6 levels of section headings */
+/* Targeting all 6 levels of section headings */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
 }
 
-/* Existing links declaration */
-a {
-    color: var(--text-color);
-}
+/* Links declaration can be added below if needed */
