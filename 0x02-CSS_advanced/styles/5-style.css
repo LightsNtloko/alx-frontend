@@ -1,19 +1,181 @@
-/* Variables for the font size */
-
-:root {
-    --font-size-small: 1.2rem;
-    --font-size-medium: 1.6rem;
-    --font-size-large: 1.8rem;
-    --font-size-x-large: 2.3rem;
-    --font-size-xx-large: 4.8rem;
-}
-
-html {
-    font-size: 62.5%;
-}
-
+/* General Styles */
 body {
-    font-size: var(--font-size-medium);
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-logo img {
+    max-width: 100%;
+}
+
+.navbar-menu {
+    text-align: right;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffb74d; /* Highlight color on hover */
+}
+
+/* Hero Section */
+.section-hero {
+    background: url('../images/hero-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #ffb74d;
+    color: #333;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #f57c00; /* Darker shade on hover */
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-tagline {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.card-services,
+.card-work,
+.card-blog,
+.card-testimonial {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.card-services:hover,
+.card-work:hover,
+.card-blog:hover,
+.card-testimonial:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.card-title a:hover {
+    color: #ffb74d; /* Highlight color on hover */
+}
+
+/* Testimonials Styles */
+.card-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.card-footer img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: #ffb74d;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #f57c00; /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-item {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
 
